@@ -3,40 +3,40 @@
 namespace D\xampp2\htdocs\AV3_POO;
 
 class Produto{
-    private ?int $idProduto;
-    private string $nome_produto;
-    private float $preco_produto;
+    private ?int $idproduto;
+    private string $nomeprod;
+    private float $preco;
 
-    public function __construct(?int $idProduto, string $nome_produto, float $preco_produto)
+    public function __construct(?int $idproduto, string $nomeprod, float $preco)
     {
-        $this->idProduto = $idProduto;
-        $this->nome_produto = $nome_produto;
-        $this->preco_produto = $preco_produto;
+        $this->idproduto = $idproduto;
+        $this->nomeprod = $nomeprod;
+        $this->preco = $preco;
     }
 
-    public function getIdProduto(): ?int
+    public function getidproduto(): ?int
     {
-        return $this->idProduto;
+        return $this->idproduto;
     }
     public function getProduto(): string
     {
-        return $this->nome_produto;
+        return $this->nomeprod;
     }
     public function getPreco(): float
     {
-        return $this->preco_produto;
+        return $this->preco;
     }
 
-    public function setIdProduto(int $id): void
+    public function setidproduto(int $id): void
     {
-        $this->idProduto = $id;
+        $this->idproduto = $id;
     }
-    public function setProduto(string $nome): void
+    public function setProduto(string $nomeprod): void
     {
-        $this->nome_produto = $nome;
+        $this->nomeprod = $nomeprod;
     }
     public function setPreco(float $preco): void
     {
-        $this->preco_produto = $preco;
+        $this->preco = $preco;
     }
 }
